@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sheepium-industries",
+	"version": "${version}",
+	"name": "Sheepium Industries",
+	"description": "Sheep Shenanigans",
+	"authors": [
+		"Trench Rat"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "Apache 2.0",
+	"icon": "assets/sheepium-industries/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.trenchrat.sheepium.SheepiumIndustries"
+		],
+		"fabric-datagen": [
+			"io.trenchrat.sheepium.SheepiumIndustriesDataGenerator"
+		],
+		"client": [
+			"io.trenchrat.sheepium.SheepiumIndustriesClient"
+		]
+	},
+	"mixins": [
+		"sheepium-industries.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
